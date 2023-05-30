@@ -1,0 +1,34 @@
+body {
+    background-color: #009933;
+
+}
+
+
+h1{
+    background-color: #ffff99;
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+
+img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.choices img:hover{
+    height: 120px;
+    width: 120px;
+}

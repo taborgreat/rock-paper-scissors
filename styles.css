@@ -25,6 +25,8 @@ h2{
 img {
     width: 100px;
     height: 100px;
+    background-color: greenyellow;
+    border: dotted yellow 5px;
 
 }
 

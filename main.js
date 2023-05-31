@@ -1,6 +1,6 @@
 let score = 0;
 let computerScore = 0;
-
+let logic = document.getElementById("logic");
 
 function playRound(player, opp){
 
@@ -28,7 +28,7 @@ function playerWon(){
     let won = document.createElement("h2");
     won.style.backgroundColor = "greenyellow";
     won.textContent = "You won and the score is now " + score + " to " + computerScore;
-    document.body.append(won);
+    logic.prepend(won);
 }
 
 function computerWon(){
@@ -36,7 +36,7 @@ function computerWon(){
     let lost = document.createElement("h2");
     lost.style.backgroundColor = "red";
     lost.textContent = "You lost and the score is now " + score + " to " + computerScore;
-    document.body.append(lost);
+    logic.prepend(lost);
 }
 
 
@@ -44,7 +44,7 @@ function draw(){
     let draw = document.createElement("h2");
     draw.style.backgroundColor = "grey";
     draw.textContent = "That was a draw!";
-    document.body.append(draw);
+    logic.prepend(draw);
 }
 
 
